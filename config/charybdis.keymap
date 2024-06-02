@@ -120,7 +120,7 @@
 &trans  &trans    &trans    &trans     &trans  &trans    &kp N1           &kp N2                &kp N3          &trans  &trans    &kp F20
                             &trans     &trans  &trans    &lt 3 BACKSPACE  &kp LSHFT
             >;
-        }@@@@@@@@@@@7;
+        };
 
         SYMNUM {
             bindings = <
