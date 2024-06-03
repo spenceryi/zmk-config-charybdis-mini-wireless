@@ -34,7 +34,7 @@
 &lt {
     flavor = "balanced";
     tapping-term-ms = <200>;
-    quikc-tap-ms = <QUICK_TAP_MS>;
+    quick-tap-ms = <QUICK_TAP_MS>;
 };
 
 / {
@@ -129,6 +129,13 @@
             hold-trigger-key-positions = <40>;
             tapping-term-ms = <100>;
         };
+
+        comma_morph: comma_morph {
+            compatible = "zmk,benavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA> <&kp DOT>
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
     };
 
     keymap {
