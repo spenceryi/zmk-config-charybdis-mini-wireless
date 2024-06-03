@@ -17,6 +17,9 @@
 #define SYS 6
 #define MOUSE 7
 
+#define XXX &none
+#define ___ &trans
+
 / {
     chosen { zmk,matrix_transform = &default_transform; };
 };
@@ -119,7 +122,7 @@
 &kp W             &kp L             &kp Y          &kp P               &kp B    &kp Z       &kp F               &kp O          &kp U              &kp SQT
 &kp C             &kp R             &kp S          &kp T               &kp G    &kp M       &kp N               &kp E          &kp I              &kp A
 &kp Q             &kp J             &kp V          &kp D               &kp K    &kp X       &kp H               &kp COMMA      &kp DOT            &kp FSLH
-                                    $mo MOUSE      &lt NUM SPACE       &mo NAV  &lt SYM RET &kp RSHFT
+                                    XXX            &kp SPACE           XXX      &kp RET     &kp RSHFT
             >;
         };
 
