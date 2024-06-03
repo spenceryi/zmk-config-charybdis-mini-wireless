@@ -157,10 +157,21 @@
             bindings = <&kp QMARK>, <&kp EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        smart_shift: smart_shift {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sk LSHFT>, <&caps_word>
+            mods = <(MOD_LSFT)>;
+        };
+
+        &caps_word {  // mods deactivate caps-word, requires PR #1451
+            /delete-property/ ignore-modifiers;
+        };
     };
 
     conditional_layers {
-        compatible = "zmk,convitionoal-layers";
+        compatible = "zmk,conditional-layers";
         tri_layer {
             if-layers = <NAV SYM>;
             then-layer = <FN>;
@@ -175,7 +186,7 @@
 &kp W             &kp L             &kp Y          &kp P               &kp B               &kp Z          &kp F               &kp O          &kp U              &kp SQT
 &kp C             &kp R             &kp S          &kp T               &kp G               &kp M          &kp N               &kp E          &kp I              &kp A
 &kp Q             &kp J             &kp V          &kp D               &kp K               &kp X          &kp H               &comma_morph   &dot_morph         &qexcl
-                                    &mo MOUSE      &lt NUM SPACE       &mo NAV             &lt SYM RET    &kp RSHFT
+                                    &mo MOUSE      &lt NUM SPACE       &mo NAV             &lt SYM RET    &smart_shift
             >; 
         };
 
@@ -211,7 +222,7 @@ XXX               XXX               XXX             XXX                &kp C_MUT
 XXX               XXX               XXX             XXX                XXX                 &kp STAR      &kp N7              &kp N8            &kp N9          &kp FSLH
 XXX               XXX               XXX             XXX                XXX                 XXX           &kp N4              &kp N5            &kp N6          &kp EQUAL
 XXX               XXX               XXX             XXX                XXX                 &kp PLUS      &kp N1              &kp N2            &kp N3          &kp MINUS
-                                    ___             ___                ___                 ___           ___
+                                    ___             ___                ___                 &dot_morph    &kp N0
             >;            
         };
 
