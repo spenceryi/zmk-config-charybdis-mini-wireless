@@ -131,7 +131,7 @@
             label = "SHIFT_ENTER";
             bindings = <&kp>, <&kp>;
 
-            #binding-cells = <2>;
+            #binding-cells = <2>; 
             hold-trigger-key-positions = <40>;
             tapping-term-ms = <100>;
         };
@@ -156,6 +156,14 @@
             bindings = <&kp QMARK>, <&kp EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+    };
+
+    conditional_layers {
+        compatible = "zmk,convitionoal-layers";
+        tri_layer {
+            if-layers = <NAV SYM>;
+            then-layer = <FN>;
+        };  
     };
 
     keymap {
