@@ -175,14 +175,14 @@
 &kp C             &kp R             &kp S          &kp T               &kp G               &kp M          &kp N               &kp E          &kp I              &kp A
 &kp Q             &kp J             &kp V          &kp D               &kp K               &kp X          &kp H               &kp COMMA      &kp DOT            &kp QMARK
                                     &mo MOUSE      &lt NUM SPACE       &mo NAV             &lt SYM RET    &kp RSHFT
-            >;
+            >; 
         };
 
         QWERTY {
             bindings = <
 &kp Q             &kp W             &kp E          &kp R               &kp T               &kp Y          &kp U               &kp I          &kp O              &kp P
 &kp A             &kp S             &kp D          &kp F               &kp G               &kp H          &kp J               &kp K          &kp L              &kp SEMI
-&kp Z             &kp X             &kp C          &kp V               &kp B               &kp M          &kp M               ___            ___                ___
+&kp Z             &kp X             &kp C          &kp V               &kp B               &kp N          &kp M               ___            ___                ___
                                     ___            ___                 ___                 ___            ___
             >;            
         };
@@ -199,7 +199,7 @@
         NAV {
             bindings = <
 &kp TAB           XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL_UP        &kp PG_UP     &kp BSPC            &kp UP            &kp DEL         XXX
-&sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp C_VOL_DN        &kp PG_DN     &kp LEFT            &sk DOWN          &kp RIGHT       &kp RET
+&sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp C_VOL_DN        &kp PG_DN     &kp LEFT            &kp DOWN          &kp RIGHT       &kp RET
 XXX               XXX               XXX             XXX                &kp C_MUTE          XXX           SWITCH_LANG         &tog QWERTY       XXX             XXX
                                     ___             ___                ___                 ___           ___
             >;            
