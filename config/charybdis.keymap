@@ -26,6 +26,12 @@
 #define TAB_RIGHT &kp LC(TAB)
 #define SWITCH_LANG &kp LC(SPACE)
 
+#define MT_CORE \
+    flavor = "tap-preferred"; \
+    tapping-term-ms = <220>; \
+    quick-tap-ms = <220>; \
+    hold-trigger-key-positions = <0>;
+
 &sk {
     release-after-ms = <800>;
     quick-release;            
@@ -133,7 +139,7 @@
         comma_morph: comma_morph {
             compatible = "zmk,benavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COMMA> <&kp DOT>;
+            bindings = <&kp COMMA>, <&kp DOT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
