@@ -44,7 +44,7 @@
 };
 
 / {
-    chosen { zmk,matrix_transform = &default_transform; };
+    chosen { zmk,matrix_transform = &five_column_transform; };
 };
 
 / {
@@ -139,9 +139,23 @@
         comma_morph: comma_morph {
             compatible = "zmk,benavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp DOT>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        dot_morph: dot_morph {
+            compatible = "zmk,benavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp COLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        qexcl: qexcl {
+            compatible = "zmk,benavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp QMARK>, <&kp EXCL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
     };
 
     keymap {
@@ -151,7 +165,7 @@
             bindings = <
 &kp W             &kp L             &kp Y          &kp P               &kp B               &kp Z          &kp F               &kp O          &kp U              &kp SQT
 &kp C             &kp R             &kp S          &kp T               &kp G               &kp M          &kp N               &kp E          &kp I              &kp A
-&kp Q             &kp J             &kp V          &kp D               &kp K               &kp X          &kp H               &kp COMMA      &kp DOT            &kp FSLH
+&kp Q             &kp J             &kp V          &kp D               &kp K               &kp X          &kp H               &comma_morph   &dot_morph         &qexcl
                                     &mo MOUSE      &lt NUM SPACE       &mo NAV             &lt SYM RET    &kp RSHFT
             >;
         };
@@ -221,10 +235,10 @@ XXX               XXX               XXX             XXX                XXX      
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+XXX               XXX               XXX             XXX                XXX                 XXX           XXX                 XXX               XXX             XXX
+XXX               XXX               XXX             XXX                XXX                 XXX           XXX                 XXX               XXX             XXX
+XXX               XXX               XXX             XXX                XXX                 XXX           XXX                 XXX               XXX             XXX
+                                    ___             ___                ___                 ___           ___
             >;
         };
     };
