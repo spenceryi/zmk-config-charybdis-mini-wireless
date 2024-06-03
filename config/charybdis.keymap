@@ -170,6 +170,15 @@ XXX               XXX               XXX             XXX                &kp C_MUT
             >;            
         };
 
+        NUM {
+            bindings = <
+XXX               XXX               XXX             XXX                XXX                 &kp STAR      &kp N7              &kp N8            &kp N9          &kp FSLH
+XXX               XXX               XXX             XXX                XXX                 XXX           &kp N4              &kp N5            &kp N6          &kp EQUAL
+XXX               XXX               XXX             XXX                XXX                 &kp PLUS      &kp N1              &kp N2            &kp N3          &kp MINUS
+                                    ___             ___                ___                 ___        ___
+            >;            
+        };
+
         FN {
             bindings = <
 &kp F1            &kp F2            &kp F3          &kp F4             &kp F5              &kp F6        &kp F7              &kp F8            &kp F9          &kp F10
