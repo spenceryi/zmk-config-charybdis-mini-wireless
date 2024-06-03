@@ -44,6 +44,12 @@
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
+&mt { MT_CORE };
+#define NAV_UP &mt LC(HOME) UP
+#define NAV_DOWN  &mt LC(END)  DOWN
+#define NAV_LEFT  &mt_home 0   LEFT 
+#define NAV_RIGHT &mt_end  0   RIGHT
+
 &caps_word {  // mods deactivate caps-word, requires PR #1451
     /delete-property/ ignore-modifiers;
 };
@@ -168,6 +174,34 @@
             bindings = <&sk LSHFT>, <&caps_word>;
             mods = <(MOD_LSFT)>;
         };
+
+        mt_home: mt_home {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&masked_home>, <&kp>;
+            MT_CORE
+        };
+
+        mt_end: mt_end {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&masked_end>, <&kp>;
+            MT_CORE
+        };
+
+        masked_home: masked_home {
+            compatible = "zmk,behavior-mor-morph";
+            #binding-cells = <0>;
+            bindings = <&kp HOME>, <&kp HOME>;
+            mods = <(MOD_LCTL)>; 
+        };
+
+        masked_end: masked_end {
+            compatible = "zmk,behavior-mor-morph";
+            #binding-cells = <0>;
+            bindings = <&kp END>, <&kp END>;
+            mods = <(MOD_LCTL)>; 
+        };
     };
 
     conditional_layers {
@@ -210,8 +244,8 @@
 
         NAV {
             bindings = <
-&kp TAB           XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL_UP        &kp PG_UP     &kp BSPC            &kp UP            &kp DEL         XXX
-&sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp C_VOL_DN        &kp PG_DN     &kp LEFT            &kp DOWN          &kp RIGHT       &kp RET
+&kp TAB           XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL_UP        &kp PG_UP     &kp BSPC            NAV_UP            &kp DEL         XXX
+&sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp C_VOL_DN        &kp PG_DN     NAV_LEFT            NAV_DOWN          NAV_RIGHT       &kp RET
 XXX               XXX               XXX             XXX                &kp C_MUTE          XXX           SWITCH_LANG         &tog QWERTY       XXX             XXX
                                     ___             ___                ___                 ___           ___
             >;            
