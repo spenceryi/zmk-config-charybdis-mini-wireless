@@ -156,36 +156,27 @@
             bindings = <
 &kp ESC           &kp LBKT          &kp LBRC        &kp LPAR           &kp LT              &kp GT     &kp RPAR            &kp RBRC          &kp RBKT        &kp GRAVE
 &kp MINUS         &kp STAR          &kp EQUAL       &kp UNDER          &kp DLLR            &kp HASH   &sk LGUI            &sk LALT          &sk LCTRL       &sk RSHFT
-&kp PLUS          &kp PIPE          &kp AT          &kp FSLH           &kp PRCNT           &kp SQT    &kp BSLH            $kp AMPS          &kp CARET       &kp TILDE
+&kp PLUS          &kp PIPE          &kp AT          &kp FSLH           &kp PRCNT           &kp SQT    &kp BSLH            &kp AMPS          &kp CARET       &kp TILDE
                                     ___             ___                ___                 ___        ___
             >;            
         };
 
         NAV {
             bindings = <
-&kp TAB           XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL_UP        &kp PG_UP     &kp BSPC            &kp RBRC          &kp RBKT        &kp GRAVE
-&sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp C_VOL_DN        &kp PG_DN     &sk LGUI            &sk LALT          &sk LCTRL       &sk RSHFT
-XXX               XXX               XXX             XXX                &kp C_MUTE          XXX           SWITCH_LANG         $tog QWERTY       XXX             XXX
+&kp TAB           XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL_UP        &kp PG_UP     &kp BSPC            &kp UP            &kp DEL         XXX
+&sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp C_VOL_DN        &kp PG_DN     &kp LEFT            &sk DOWN          &kp RIGHT       &kp RET
+XXX               XXX               XXX             XXX                &kp C_MUTE          XXX           SWITCH_LANG         &tog QWERTY       XXX             XXX
                                     ___             ___                ___                 ___        ___
             >;            
         };
 
-        SYMNUM {
+        FN {
             bindings = <
-&bt BT_CLR  &kp EXCL      &kp AT       &kp HASH    &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS                 &kp KP_MULTIPLY   &kp LPAR              &kp RPAR              &kp DEL
-&trans      &trans        &bt BT_PRV   &bt BT_NXT  &trans    &trans       &kp UNDER  &u_mt RIGHT_SHIFT EQUAL  &u_mt RCTRL LBKT  &u_mt RIGHT_ALT RBKT  &u_mt RIGHT_GUI BSLH  &kp GRAVE
-&trans      &out OUT_TOG  &bootloader  &trans      &trans    &trans       &kp MINUS  &kp PLUS                 &kp LBRC          &kp RBRC              &kp PIPE              &kp TILDE
-                                       &trans      &trans    &mo 3        &trans     &trans
-            >;
-        };
-
-        FUN {
-            bindings = <
-&trans  &trans   &kp F1  &kp F2   &kp F3   &kp F4     &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4  &bt BT_CLR
-&trans  &kp DEL  &kp F5  &kp F6   &kp F7   &kp F8     &out OUT_TOG  &kp K_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &kp LALT
-&trans  &trans   &kp F9  &kp F10  &kp F11  &kp F12    &trans        &trans            &trans             &trans           &trans        &to 0
-                         &trans   &trans   &trans     &trans        &trans
-            >;
+&kp F1            &kp F2            &kp F3          &kp F4             &kp F5              &kp F6        &kp F7              &kp F8            &kp F9          &kp F10
+&sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp F11             &kp F12       &sk LGUI            &sk LALT          &sk LCTRL       &sk RSHFT
+XXX               XXX               XXX             XXX                XXX                 XXX           XXX                 XXX               XXX             XXX
+                                    ___             ___                ___                 ___        ___
+            >;            
         };
 
         AUTO-MOUSE {
