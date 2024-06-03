@@ -44,6 +44,10 @@
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
+&caps_word {  // mods deactivate caps-word, requires PR #1451
+    /delete-property/ ignore-modifiers;
+};
+
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
 };
@@ -163,10 +167,6 @@
             #binding-cells = <0>;
             bindings = <&sk LSHFT>, <&caps_word>;
             mods = <(MOD_LSFT)>;
-        };
-
-        &caps_word {  // mods deactivate caps-word, requires PR #1451
-            /delete-property/ ignore-modifiers;
         };
     };
 
