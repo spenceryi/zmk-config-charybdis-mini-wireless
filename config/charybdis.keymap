@@ -133,7 +133,7 @@
         comma_morph: comma_morph {
             compatible = "zmk,benavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COMMA> <&kp DOT>
+            bindings = <&kp COMMA> <&kp DOT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         }
     };
