@@ -136,28 +136,28 @@
 
         BASE {
             bindings = <
-&kp W             &kp L             &kp Y          &kp P               &kp B               &kp Z       &kp F               &kp O          &kp U              &kp SQT
-&kp C             &kp R             &kp S          &kp T               &kp G               &kp M       &kp N               &kp E          &kp I              &kp A
-&kp Q             &kp J             &kp V          &kp D               &kp K               &kp X       &kp H               &kp COMMA      &kp DOT            &kp FSLH
-                                    XXX            &kp SPACE           XXX                 &kp RET     &kp RSHFT
+&kp W             &kp L             &kp Y          &kp P               &kp B               &kp Z          &kp F               &kp O          &kp U              &kp SQT
+&kp C             &kp R             &kp S          &kp T               &kp G               &kp M          &kp N               &kp E          &kp I              &kp A
+&kp Q             &kp J             &kp V          &kp D               &kp K               &kp X          &kp H               &kp COMMA      &kp DOT            &kp FSLH
+                                    &mo MOUSE      &lt NUM SPACE       &mo NAV             &lt SYM RET    &kp RSHFT
             >;
         };
 
         QWERTY {
             bindings = <
-&kp Q             &kp W             &kp E          &kp R               &kp T               &kp Y       &kp U               &kp I          &kp O              &kp P
-&kp A             &kp S             &kp D          &kp F               &kp G               &kp H       &kp J               &kp K          &kp L              &kp SEMI
-&kp Z             &kp X             &kp C          &kp V               &kp B               &kp M       &kp M               ___            ___                ___
-                                    ___            ___                 ___                 ___         ___
+&kp Q             &kp W             &kp E          &kp R               &kp T               &kp Y          &kp U               &kp I          &kp O              &kp P
+&kp A             &kp S             &kp D          &kp F               &kp G               &kp H          &kp J               &kp K          &kp L              &kp SEMI
+&kp Z             &kp X             &kp C          &kp V               &kp B               &kp M          &kp M               ___            ___                ___
+                                    ___            ___                 ___                 ___            ___
             >;            
         };
 
         SYM {
             bindings = <
-&kp ESC           &kp LBKT          &kp LBRC        &kp LPAR           &kp LT              &kp GT     &kp RPAR            &kp RBRC          &kp RBKT        &kp GRAVE
-&kp MINUS         &kp STAR          &kp EQUAL       &kp UNDER          &kp DLLR            &kp HASH   &sk LGUI            &sk LALT          &sk LCTRL       &sk RSHFT
-&kp PLUS          &kp PIPE          &kp AT          &kp FSLH           &kp PRCNT           &kp SQT    &kp BSLH            &kp AMPS          &kp CARET       &kp TILDE
-                                    ___             ___                ___                 ___        ___
+&kp ESC           &kp LBKT          &kp LBRC        &kp LPAR           &kp LT              &kp GT        &kp RPAR            &kp RBRC          &kp RBKT        &kp GRAVE
+&kp MINUS         &kp STAR          &kp EQUAL       &kp UNDER          &kp DLLR            &kp HASH      &sk LGUI            &sk LALT          &sk LCTRL       &sk RSHFT
+&kp PLUS          &kp PIPE          &kp AT          &kp FSLH           &kp PRCNT           &kp SQT       &kp BSLH            &kp AMPS          &kp CARET       &kp TILDE
+                                    ___             ___                ___                 ___           ___
             >;            
         };
 
@@ -166,7 +166,7 @@
 &kp TAB           XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL_UP        &kp PG_UP     &kp BSPC            &kp UP            &kp DEL         XXX
 &sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp C_VOL_DN        &kp PG_DN     &kp LEFT            &sk DOWN          &kp RIGHT       &kp RET
 XXX               XXX               XXX             XXX                &kp C_MUTE          XXX           SWITCH_LANG         &tog QWERTY       XXX             XXX
-                                    ___             ___                ___                 ___        ___
+                                    ___             ___                ___                 ___           ___
             >;            
         };
 
@@ -175,7 +175,7 @@ XXX               XXX               XXX             XXX                &kp C_MUT
 XXX               XXX               XXX             XXX                XXX                 &kp STAR      &kp N7              &kp N8            &kp N9          &kp FSLH
 XXX               XXX               XXX             XXX                XXX                 XXX           &kp N4              &kp N5            &kp N6          &kp EQUAL
 XXX               XXX               XXX             XXX                XXX                 &kp PLUS      &kp N1              &kp N2            &kp N3          &kp MINUS
-                                    ___             ___                ___                 ___        ___
+                                    ___             ___                ___                 ___           ___
             >;            
         };
 
@@ -183,18 +183,27 @@ XXX               XXX               XXX             XXX                XXX      
             bindings = <
 &kp F1            &kp F2            &kp F3          &kp F4             &kp F5              &kp F6        &kp F7              &kp F8            &kp F9          &kp F10
 &sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp F11             &kp F12       &sk LGUI            &sk LALT          &sk LCTRL       &sk RSHFT
-XXX               XXX               XXX             XXX                XXX                 XXX           XXX                 XXX               XXX             XXX
-                                    ___             ___                ___                 ___        ___
+XXX               XXX               XXX             XXX                XXX                 XXX           XXX                 XXX               XXX             &mo SYS
+                                    ___             ___                ___                 ___           ___
             >;            
         };
 
-        AUTO-MOUSE {
+        SYS {
             bindings = <
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
-            >;
+&bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2    &bt BT_SEL 3       &bt BT_CLR          XXX           XXX                 XXX               XXX             XXX
+XXX               XXX               XXX             XXX                &bootloader         &bootloader   XXX                 XXX               XXX             XXX
+XXX               XXX               XXX             XXX                &sys_reset          &sys_reset    XXX                 XXX               XXX             XXX
+                                    ___             ___                ___                 ___           ___
+            >;            
+        };
+
+        MOUSE {
+            bindings = <
+XXX               XXX               XXX             XXX                XXX                 XXX           XXX                 XXX               XXX             XXX
+XXX               XXX               &mkp RCLK       &mkp LCLK          XXX                 XXX           XXX                 XXX               XXX             XXX
+XXX               XXX               XXX             XXX                XXX                 XXX           XXX                 XXX               XXX             XXX
+                                    ___             ___                ___                 ___           ___
+            >;            
         };
 
         SCROLL {
