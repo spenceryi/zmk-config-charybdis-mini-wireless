@@ -246,7 +246,7 @@
             bindings = <
 &kp TAB           XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL_UP        &kp PG_UP     &kp BSPC            NAV_UP            &kp DEL         XXX
 &sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp C_VOL_DN        &kp PG_DN     NAV_LEFT            NAV_DOWN          NAV_RIGHT       &kp RET
-XXX               XXX               XXX             XXX                &kp C_MUTE          XXX           SWITCH_LANG         &tog QWERTY       XXX             XXX
+&kp Z             &kp X             &kp C           &kp V              &kp C_MUTE          XXX           SWITCH_LANG         &tog QWERTY       XXX             XXX
                                     ___             ___                ___                 ___           ___
             >;            
         };
