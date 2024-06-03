@@ -22,6 +22,10 @@
 
 #define QUICK_TAP_MS 175
 
+#define TAB_LEFT &kp LC(LS(TAB))
+#define TAB_RIGHT &kp LC(TAB)
+#define SWITCH_LANG &kp LC(SPACE)
+
 &sk {
     release-after-ms = <800>;
     quick-release;            
@@ -132,38 +136,38 @@
 
         BASE {
             bindings = <
-&kp W             &kp L             &kp Y          &kp P               &kp B    &kp Z       &kp F               &kp O          &kp U              &kp SQT
-&kp C             &kp R             &kp S          &kp T               &kp G    &kp M       &kp N               &kp E          &kp I              &kp A
-&kp Q             &kp J             &kp V          &kp D               &kp K    &kp X       &kp H               &kp COMMA      &kp DOT            &kp FSLH
-                                    XXX            &kp SPACE           XXX      &kp RET     &kp RSHFT
+&kp W             &kp L             &kp Y          &kp P               &kp B               &kp Z       &kp F               &kp O          &kp U              &kp SQT
+&kp C             &kp R             &kp S          &kp T               &kp G               &kp M       &kp N               &kp E          &kp I              &kp A
+&kp Q             &kp J             &kp V          &kp D               &kp K               &kp X       &kp H               &kp COMMA      &kp DOT            &kp FSLH
+                                    XXX            &kp SPACE           XXX                 &kp RET     &kp RSHFT
             >;
         };
 
         QWERTY {
             bindings = <
-&kp Q             &kp W             &kp E          &kp R               &kp T    &kp Y       &kp U               &kp I          &kp O              &kp P
-&kp A             &kp S             &kp D          &kp F               &kp G    &kp H       &kp J               &kp K          &kp L              &kp SEMI
-&kp Z             &kp X             &kp C          &kp V               &kp B    &kp M       &kp M               ___            ___                ___
-                                    ___            ___                 ___      ___         ___
+&kp Q             &kp W             &kp E          &kp R               &kp T               &kp Y       &kp U               &kp I          &kp O              &kp P
+&kp A             &kp S             &kp D          &kp F               &kp G               &kp H       &kp J               &kp K          &kp L              &kp SEMI
+&kp Z             &kp X             &kp C          &kp V               &kp B               &kp M       &kp M               ___            ___                ___
+                                    ___            ___                 ___                 ___         ___
             >;            
-        }
+        };
 
         SYM {
             bindings = <
-&kp ESC           &kp LBKT          &kp LBRC        &kp LPAR           &kp LT    &kp GT     &kp RPAR            &kp RBRC          &kp RBKT        &kp GRAVE
-&kp MINUS         &kp STAR          &kp EQUAL       &kp UNDER          &kp DLLR  &kp HASH   &sk LGUI            &sk LALT          &sk LCTRL       &sk RSHFT
-&kp PLUS          &kp PIPE          &kp AT          &kp FSLH           &kp PRCNT &kp SQT    &kp BSLH            $kp AMPS          &kp CARET       &kp TILDE
-                                    ___             ___                ___       ___        ___
+&kp ESC           &kp LBKT          &kp LBRC        &kp LPAR           &kp LT              &kp GT     &kp RPAR            &kp RBRC          &kp RBKT        &kp GRAVE
+&kp MINUS         &kp STAR          &kp EQUAL       &kp UNDER          &kp DLLR            &kp HASH   &sk LGUI            &sk LALT          &sk LCTRL       &sk RSHFT
+&kp PLUS          &kp PIPE          &kp AT          &kp FSLH           &kp PRCNT           &kp SQT    &kp BSLH            $kp AMPS          &kp CARET       &kp TILDE
+                                    ___             ___                ___                 ___        ___
             >;            
-        }
+        };
 
         NAV {
             bindings = <
-&trans  &trans    &kp UP    &trans     &trans  &trans    &kp N7           &kp N8                &kp N9          &kp N0  &kp HOME  &kp F1
-&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans    &kp N4           &u_mt RIGHT_SHIFT N5  &u_mt RCTRL N6  &trans  &trans    &kp F10
-&trans  &trans    &trans    &trans     &trans  &trans    &kp N1           &kp N2                &kp N3          &trans  &trans    &kp F20
-                            &trans     &trans  &trans    &lt 3 BACKSPACE  &kp LSHFT
-            >;
+&kp TAB           XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL_UP        &kp PG_UP     &kp BSPC            &kp RBRC          &kp RBKT        &kp GRAVE
+&sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp C_VOL_DN        &kp PG_DN     &sk LGUI            &sk LALT          &sk LCTRL       &sk RSHFT
+XXX               XXX               XXX             XXX                &kp C_MUTE          XXX           SWITCH_LANG         $tog QWERTY       XXX             XXX
+                                    ___             ___                ___                 ___        ___
+            >;            
         };
 
         SYMNUM {
