@@ -16,6 +16,7 @@
 #define FN 5
 #define SYS 6
 #define MOUSE 7
+#define SCROLL 8
 
 #define XXX &none
 #define ___ &trans
@@ -235,7 +236,7 @@ XXX               XXX               XXX             XXX                &sys_rese
         MOUSE {
             bindings = <
 XXX               XXX               XXX             XXX                XXX                 XXX           XXX                 XXX               XXX             XXX
-XXX               XXX               &mkp RCLK       &mkp LCLK          XXX                 XXX           XXX                 XXX               XXX             XXX
+&mo SCROLL        XXX               &mkp RCLK       &mkp LCLK          XXX                 XXX           XXX                 XXX               XXX             XXX
 XXX               XXX               XXX             XXX                XXX                 XXX           XXX                 XXX               XXX             XXX
                                     ___             ___                ___                 ___           ___
             >;            
