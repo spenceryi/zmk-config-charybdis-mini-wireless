@@ -135,7 +135,7 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA> <&kp DOT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        }
+        };
     };
 
     keymap {
