@@ -247,7 +247,7 @@
             bindings = <
 XXX               XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL_UP        &kp PG_UP     &kp BSPC            NAV_UP            &kp DEL         XXX
 &sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp C_VOL_DN        &kp PG_DN     NAV_LEFT            NAV_DOWN          NAV_RIGHT       &kp RET
-&kp TAB           XXX               XXX             XXX                &kp C_MUTE          XXX           XXX                 XXX               XXX             XXX
+&kp TAB           XXX               XXX             XXX                &kp C_MUTE          XXX           &kp TAB             XXX               XXX             XXX
                                     ___             ___                ___                 ___           ___
             >;            
         };
@@ -282,7 +282,7 @@ XXX               XXX               XXX             XXX                &sys_rese
         MOUSE {
             bindings = <
 XXX               XXX               XXX             XXX                XXX                 XXX           XXX                 XXX               XXX             XXX
-&mo SCROLL        &mo SNIPE         &mkp RCLK       &mkp LCLK          XXX                 XXX           XXX                 XXX               XXX             XXX
+XXX               XXX               &mo SCROLL      &mo SNIPE          XXX                 XXX           &mkp LCLK           &mkp RCLK         XXX             XXX
 &sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           XXX                 XXX           XXX                 XXX               XXX             XXX
                                     ___             ___                ___                 ___           ___
             >;            
