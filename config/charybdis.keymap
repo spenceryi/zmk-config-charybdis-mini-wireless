@@ -255,9 +255,9 @@ XXX               XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL
         NUM {
             bindings = <
 XXX               XXX               XXX             XXX                XXX                 &kp STAR      &kp N7              &kp N8            &kp N9          &kp FSLH
-XXX               XXX               XXX             XXX                XXX                 XXX           &kp N4              &kp N5            &kp N6          &kp EQUAL
+XXX               XXX               XXX             XXX                XXX                 &dot_morph    &kp N4              &kp N5            &kp N6          &kp EQUAL
 XXX               XXX               XXX             XXX                XXX                 &kp PLUS      &kp N1              &kp N2            &kp N3          &kp MINUS
-                                    ___             ___                ___                 &dot_morph    &kp N0
+                                    ___             ___                ___                 ___           &kp N0
             >;            
         };
 
