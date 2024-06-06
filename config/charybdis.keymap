@@ -208,7 +208,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <NAV SYM>;
+            if-layers = <NUM SYM>;
             then-layer = <FN>;
         };  
     };
@@ -221,7 +221,7 @@
 &kp W             &kp L             &kp Y          &kp P               &kp B               &kp Z          &kp F               &kp O          &kp U              &kp SQT
 &kp C             &kp R             &kp S          &kp T               &kp G               &kp M          &kp N               &kp E          &kp I              &kp A
 &kp Q             &kp J             &kp V          &kp D               &kp K               &kp X          &kp H               &comma_morph   &dot_morph         &qexcl
-                                    &mo MOUSE      &lt NUM SPACE       &mo NAV             &lt SYM RET    &smart_shift
+                                    &mo MOUSE      &lt NAV SPACE       &mo NUM             &lt SYM RET    &smart_shift
             >; 
         };
 
