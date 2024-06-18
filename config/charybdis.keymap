@@ -27,6 +27,7 @@
 #define TAB_LEFT &kp LC(LS(TAB))
 #define TAB_RIGHT &kp LC(TAB)
 #define SWITCH_LANG &kp LC(SPACE)
+#define UNDO &kp LC(Z)
 
 #define MT_CORE \
     flavor = "tap-preferred"; \
@@ -188,7 +189,7 @@
             bindings = <
 XXX               XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL_UP        &kp PG_UP     &kp BSPC            NAV_UP            &kp DEL         XXX
 &sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp C_VOL_DN        &kp PG_DN     NAV_LEFT            NAV_DOWN          NAV_RIGHT       &kp RET
-&kp TAB           XXX               XXX             XXX                &kp C_MUTE          XXX           &kp TAB             XXX               XXX             XXX
+&kp TAB           XXX               XXX             XXX                &kp C_MUTE          UNDO          &kp TAB             XXX               XXX             XXX
                                     ___             ___                ___                 ___           ___
             >;            
         };
