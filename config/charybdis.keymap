@@ -224,7 +224,7 @@ XXX               XXX               XXX             XXX                &sys_rese
             bindings = <
 XXX               XXX               XXX             XXX                XXX                 XXX           XXX                 XXX               XXX             XXX
 &sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           XXX                 XXX           XXX                 XXX               XXX             XXX
-XXX               &mo SCROLL        &mkp RCLK       &mkp LCLK          XXX                 XXX           XXX                 XXX               XXX             XXX
+&mo SNIPE         &mo SCROLL        &mkp RCLK       &mkp LCLK          XXX                 XXX           XXX                 XXX               XXX             XXX
                                     ___             ___                ___                 ___           ___
             >;            
         };
