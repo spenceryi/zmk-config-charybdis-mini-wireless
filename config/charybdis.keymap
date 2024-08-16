@@ -186,7 +186,7 @@ XXX               &kp LBKT          &kp LBRC        &kp LPAR           &kp LT   
 
         NAV {
             bindings = <
-XXX               XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL_UP        &kp PG_UP     &kp BSPC            NAV_UP            &kp DEL         $kp ESC
+XXX               XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL_UP        &kp PG_UP     &kp BSPC            NAV_UP            &kp DEL         &kp ESC
 &sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp C_VOL_DN        &kp PG_DN     NAV_LEFT            NAV_DOWN          NAV_RIGHT       &kp RET
 &mo SNIPE         &mo SCROLL        &mkp RCLK       &mkp LCLK          &kp C_MUTE          UNDO          &kp TAB             XXX               XXX             XXX
                                     ___             ___                ___                 ___           ___
