@@ -15,9 +15,8 @@
 #define NUM 4
 #define FN 5
 #define SYS 6
-#define MOUSE 7
-#define SNIPE 8
-#define SCROLL 9
+#define SNIPE 7
+#define SCROLL 8
 
 #define XXX &none
 #define ___ &trans
@@ -163,7 +162,7 @@
 &kp W             &kp L             &kp Y          &kp P               &kp B               &kp Z          &kp F               &kp O          &kp U              &kp SQT
 &kp C             &kp R             &kp S          &kp T               &kp G               &kp M          &kp N               &kp E          &kp I              &kp A
 &kp Q             &kp J             &kp V          &kp D               &kp K               &kp X          &kp H               &comma_morph   &dot_morph         &qexcl
-                                    &mo MOUSE      &lt NAV SPACE       &mo NUM             &lt SYM RET    &smart_shift
+                                    &mo NAV        &kp SPACE           &mo NUM             &mo SYM        &smart_shift
             >; 
         };
 
@@ -187,9 +186,9 @@
 
         NAV {
             bindings = <
-XXX               XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL_UP        &kp PG_UP     &kp BSPC            NAV_UP            &kp DEL         XXX
+XXX               XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL_UP        &kp PG_UP     &kp BSPC            NAV_UP            &kp DEL         &kp ESC
 &sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp C_VOL_DN        &kp PG_DN     NAV_LEFT            NAV_DOWN          NAV_RIGHT       &kp RET
-&kp TAB           XXX               XXX             XXX                &kp C_MUTE          UNDO          &kp TAB             XXX               XXX             XXX
+&mo SNIPE         &mo SCROLL        &mkp RCLK       &mkp LCLK          &kp C_MUTE          UNDO          &kp TAB             XXX               XXX             XXX
                                     ___             ___                ___                 ___           ___
             >;            
         };
@@ -207,7 +206,7 @@ XXX               XXX               XXX             XXX                XXX      
             bindings = <
 &kp F1            &kp F2            &kp F3          &kp F4             &kp F5              &kp F6        &kp F7              &kp F8            &kp F9          &kp F10
 &sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp F11             &kp F12       &sk LGUI            &sk LALT          &sk LCTRL       &sk RSHFT
-XXX               XXX               XXX             XXX                XXX                 XXX           SWITCH_LANG         &tog QWERTY       XXX             &mo SYS
+XXX               XXX               XXX             INS                XXX                 XXX           SWITCH_LANG         &tog QWERTY       XXX             &mo SYS
                                     ___             ___                ___                 ___           ___
             >;            
         };
@@ -221,20 +220,11 @@ XXX               XXX               XXX             XXX                &sys_rese
             >;            
         };
 
-        MOUSE {
-            bindings = <
-&sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           XXX                 XXX           XXX                 XXX               XXX             XXX
-XXX               XXX               &mkp RCLK       &mkp LCLK          XXX                 XXX           XXX                 XXX               XXX             XXX
-&sk LSHFT         &sk LCTRL         &mo SNIPE       &mo SCROLL         XXX                 XXX           XXX                 XXX               XXX             XXX
-                                    ___             ___                ___                 ___           ___
-            >;            
-        };
-
         SNIPE {
             bindings = <
 XXX               XXX               XXX             XXX                XXX                 XXX           XXX                 XXX               XXX             XXX
-&mo SCROLL        XXX               &mkp RCLK       &mkp LCLK          XXX                 XXX           XXX                 XXX               XXX             XXX
 &sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           XXX                 XXX           XXX                 XXX               XXX             XXX
+&mo SNIPE         &mo SCROLL        &mkp RCLK       &mkp LCLK          XXX                 XXX           XXX                 XXX               XXX             XXX
                                     ___             ___                ___                 ___           ___
             >;            
         };
