@@ -162,7 +162,7 @@
 &kp W             &kp L             &kp Y          &kp P               &kp B               &kp Z          &kp F               &kp O          &kp U              &kp SQT
 &kp C             &kp R             &kp S          &kp T               &kp G               &kp M          &kp N               &kp E          &kp I              &kp A
 &kp Q             &kp J             &kp V          &kp D               &kp K               &kp X          &kp H               &comma_morph   &dot_morph         &qexcl
-                                    &kp TAB        &lt NAV SPACE       &mo NUM             &mo SYM        &smart_shift
+                                    &mo NUM        &kp SPACE           &mo NAV             &mo SYM        &smart_shift
             >; 
         };
 
@@ -186,7 +186,7 @@ XXX               &kp LBKT          &kp LBRC        &kp LPAR           &kp LT   
 
         NAV {
             bindings = <
-XXX               XXX               TAB_LEFT        TAB_RIGHT          &kp C_VOL_UP        &kp PG_UP     &kp BSPC            NAV_UP            &kp DEL         &kp ESC
+XXX               XXX               XXX             &kp TAB            &kp C_VOL_UP        &kp PG_UP     &kp BSPC            NAV_UP            &kp DEL         &kp ESC
 &sk LSHFT         &sk LCTRL         &sk LALT        &sk LGUI           &kp C_VOL_DN        &kp PG_DN     NAV_LEFT            NAV_DOWN          NAV_RIGHT       &kp RET
 &mo SNIPE         &mo SCROLL        &mkp RCLK       &mkp LCLK          &kp C_MUTE          UNDO          XXX                 XXX               XXX             XXX
                                     ___             ___                ___                 ___           ___
