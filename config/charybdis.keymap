@@ -178,7 +178,7 @@
         SYM {
             bindings = <
 XXX               &kp LBKT          &kp LBRC        &kp LPAR           &kp LT              &kp GT        &kp RPAR            &kp RBRC          &kp RBKT        &kp GRAVE
-&kp MINUS         &kp STAR          &kp EQUAL       &kp UNDER          &kp DLLR            &kp HASH      &sk LGUI            &sk LALT          &sk LCTRL       &sk RSHFT
+&kp MINUS         &kp STAR          &kp EQUAL       &kp UNDER          &kp DLLR            &kp HASH      &sk LGUI            &sk RALT          &sk RCTRL       &sk RSHFT
 &kp PLUS          &kp PIPE          &kp AT          &kp FSLH           &kp PRCNT           &kp SQT       &kp BSLH            &kp AMPS          &kp CARET       &kp TILDE
                                     ___             ___                ___                 ___           ___
             >;            
